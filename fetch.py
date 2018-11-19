@@ -2,10 +2,10 @@ import os
 import tarfile
 from six.moves import urllib
 
-DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
+DOWNLOAD_ROOT = "https://?/"
 # os.path.join() join two or more pathname components, inserting '/' as needed
 HOUSING_PATH = os.path.join("datasets", "housing")
-HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
+HOUSING_URL = DOWNLOAD_ROOT + "/housing.tgz"
 
 def fetch_data(url=HOUSING_URL, path=HOUSING_PATH):
     if not os.path.isdir(path):
